@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión de Cursos</h1>
+
+    <!-- Formulario para agregar cursos -->
+    <form id="courseForm">
+        <label for="courseName">Nombre del Curso:</label>
+        <input type="text" id="courseName" required>
+
+        <label for="courseDescription">Descripción:</label>
+        <textarea id="courseDescription" required></textarea>
+
+        <label for="courseDuration">Duración (horas):</label>
+        <input type="number" id="courseDuration" required>
+
+        <label for="courseInstructor">Instructor:</label>
+        <input type="text" id="courseInstructor" required>
+
+        <button type="submit">Agregar Curso</button>
+    </form>
+
+    <!-- Listado de cursos -->
+    <h2>Cursos Registrados</h2>
+    <ul id="courseList"></ul>
+
+    <!-- Enlazamos el script de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
